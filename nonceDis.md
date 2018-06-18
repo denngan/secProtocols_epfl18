@@ -45,7 +45,7 @@ AES-GCM provides authenticated encryption with associated data (AEAD). It uses:
 13. **What is a forgery attack?**
 <br> Forgery attack is the attack when we forge messages. In other words, the attacker sends his message using user's signature. </br>
 
-14. **Describe the Forbidden Attack and why it is called that way? **
+14. **Describe the Forbidden Attack and why it is called that way?**
 <br> The attack is called forbidden because it will never happen if there will be no mistakes in the implementation. In our case, the goal of the attack is to derive the key used for GHASH. </br>
 
 15. **Which functions are used in AES-GCM?** 
