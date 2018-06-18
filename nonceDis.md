@@ -2,23 +2,23 @@
 <br> AES (Andvanced encryption algorithm) is a specification for the encryption of electronic data. </br>
 
 2. **What is TLS?**
-TLS (Transport Layer Security Protocol) is a cryptographic protocol that provides communications security over a computer network (typically, the HTTP protocol). It sets up the cryptographic algorithms, validates both parties through digital certificates and generates symmetric key.
+<br> TLS (Transport Layer Security Protocol) is a cryptographic protocol that provides communications security over a computer network (typically, the HTTP protocol). It sets up the cryptographic algorithms, validates both parties through digital certificates and generates symmetric key. </br>
 
 3. **What is AES-GCM?**
 AES-GCM provides authenticated encryption with associated data (AEAD). It uses:
--- Galois Counter Mode (GCM);
--- an authenticated mode of operation;
--- Advanced Encryption Standart (AES).
+<br> -- Galois Counter Mode (GCM); </br>
+<br> -- an authenticated mode of operation; </br>
+<br> -- Advanced Encryption Standart (AES). </br>
 
 4. **In which version of TLS is AES-GCM used?**
-Version 1.3.
+<br> Version 1.3. </br>
 
 5. **What is AEAD?**
-AEAD - authenticated encryption with associated data.
+<br> AEAD - authenticated encryption with associated data. </br>
 
 
 6. **What is a nonce? Where is it used in AES-GCM?**
-Nonce is an arbitrary number that can be used just once. In AES-GCM it is used in the formation of IV (initialization vector). IV = salt32 || nonce64.
+<br> Nonce is an arbitrary number that can be used just once. In AES-GCM it is used in the formation of IV (initialization vector). IV = salt32 || nonce64. </br>
 
 7. **What is a Galois Field?**
 Galois Field is a field that contains a finite number of elements.
