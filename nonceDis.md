@@ -39,8 +39,11 @@ AES-GCM provides authenticated encryption with associated data (AEAD). It uses:
 <br> A birthday attack is a type of cryptographic attack that exploits the mathematics behind the birthday problem in probability theory. This attack can be used to abuse communication between two or more parties. The attack depends on the higher likelihood of collisions found between random attack attempts and a fixed degree of permutations. With a birthday attack it is possible to find a collision.  </br>
 
 12. **What is known plaintext attack? How does it work in AES-GCM?**
+<br> A known plaintext attack is the attack when we know open text and use it to retrieve the key with the aim to decrypt other messages. </br>
+<br> When knowing the plaintext M, one can retrieve the IV encrypted in counter mode. CTR(IV) = C + M, when IV is reused, the CTR will decrypt any other ciphertext with unknown messages.</br>
 
-2. What is a forgery attack? 
+13. **What is a forgery attack?**
+
 3. Describe the Forbidden Attack and why it is called that way?
 3. Which functions are used in AES-GCM?
 5. How is the GHASh Key L computed?
