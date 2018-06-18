@@ -83,16 +83,16 @@ AES-GCM provides authenticated encryption with associated data (AEAD). It uses:
 26. **What other kind of algorithms could be used for AES-GCM? Explain how they improve security.**
 <br>ChaCha20-Poly1305, AES-OCB for deterministic nonce creation. The advantages here are that the nonce is constructed from the record sequence number and it is not needed to send it to transmit the nonce with each message. </br>
 27. **Would the Forbidden Attack be possible if AES-GCM was generating nonces from the record sequence number?**
-<br> </br>
+<br> No, because the record sequence number is used as a counter. </br>
 28. **How secure is AES-GCM?**
 <br> It is very secure if there are no developer mistakes and, of course, no nonce reused. </br>
 
 29. **Is it insecure if a server is forced to resend a new packet in a new session with the same salt or different salt?**
-<br> </br>
+<br> With the same salt there can be collisions but the probability is very low. </br>
 30. **What benefits arise form using the TLS record sequence number as nonce?**
-<br> </br>
+<br> It is used as a counter, we do not need to program something, there is no mistake danger.</br>
 31. **What is the goal of the Forbidden Attack?** 
-<br> </br>
+<br> To retrieve GHASH key L to authenticate and forge packets. </br>
 32. **What is the goal of the known plain message attack?**
 <br> To retrieve the key using the known plaintext. </br>
 33. **What are advantages and disadvantages of MAC-then Encrypt?**
