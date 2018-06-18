@@ -21,18 +21,21 @@ AES-GCM provides authenticated encryption with associated data (AEAD). It uses:
 <br> Nonce is an arbitrary number that can be used just once. In AES-GCM it is used in the formation of IV (initialization vector). IV = salt32 || nonce64. </br>
 
 7. **What is a Galois Field?**
-Galois Field is a field that contains a finite number of elements.
+<br> Galois Field is a field that contains a finite number of elements. </br>
 
 8. **What is the best way to generate a nonce?**
-There are two posiibilities: using a counter or using a Linear Feedback Shift Register (LFSR: a shift register whose input bit is a linear function of its previous state).
+<br> There are two posiibilities: using a counter or using a Linear Feedback Shift Register (LFSR: a shift register whose input bit is a linear function of its previous state). </br>
 
 
 9. **What is the difference between using a counter and LSFR for nonce generation?**
 
 
 
-8. Why should nonces not be created randomly?
-9. What does the Birthday Paradox imply.
+10. **Why should nonces not be created randomly?**
+<br> When we create nonces randomly, we could have some collisions. For instance, with 2^33 sent messages the probability of collision is over 86% due to Birthday Paradox. </br>
+
+11. **What does the Birthday Paradox imply?**
+
 10. What is known plaintext attack? How does it work in AES-GCM?
 2. What is a forgery attack? 
 3. Describe the Forbidden Attack and why it is called that way?
