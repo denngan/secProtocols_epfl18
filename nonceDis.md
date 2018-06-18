@@ -35,8 +35,11 @@ AES-GCM provides authenticated encryption with associated data (AEAD). It uses:
 <br> When we create nonces randomly, we could have some collisions. For instance, with 2^33 sent messages the probability of collision is over 86% due to Birthday Paradox. </br>
 
 11. **What does the Birthday Paradox imply?**
+<br> The birthday paradox briefly: we have 23 people and we want to estimate that there are two men who have birthday at the same day. The probability of this is more than 50%. To understand it better, let's look at the birthday attack. </br>
+<br> A birthday attack is a type of cryptographic attack that exploits the mathematics behind the birthday problem in probability theory. This attack can be used to abuse communication between two or more parties. The attack depends on the higher likelihood of collisions found between random attack attempts and a fixed degree of permutations. With a birthday attack it is possible to find a collision.  </br>
 
-10. What is known plaintext attack? How does it work in AES-GCM?
+12. **What is known plaintext attack? How does it work in AES-GCM?**
+
 2. What is a forgery attack? 
 3. Describe the Forbidden Attack and why it is called that way?
 3. Which functions are used in AES-GCM?
