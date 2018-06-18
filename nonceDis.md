@@ -43,23 +43,47 @@ AES-GCM provides authenticated encryption with associated data (AEAD). It uses:
 <br> When knowing the plaintext M, one can retrieve the IV encrypted in counter mode. CTR(IV) = C + M, when IV is reused, the CTR will decrypt any other ciphertext with unknown messages.</br>
 
 13. **What is a forgery attack?**
+<br> Forgery attack is the attack when we forge messages. In other words, the attacker sends his message using user's signature. </br>
 
-3. Describe the Forbidden Attack and why it is called that way?
-3. Which functions are used in AES-GCM?
-5. How is the GHASh Key L computed?
-6. How can an attacker get Key L when a nonce is reused?
-8. Which algorithm is used for Factorization and in which complexity does it operate?
-8. Why is a static endpoint needed to mount a practical forgery attack? What is a static endpoint?
-9. Explain the steps of a practical forgery attack with nocne reuse and why a man in the middle is needed.
-4. Under which circumstances is the Forbidden Attack possible?
-7. How long is the IV in AES-GCM for TLS and what does it consist of?
-8. Why is salt added to the nonce to create the IV in AES-GCM?
-9. What is added to the IV before AES-GCM encryption and why.
-10. Why could adding 0^32 to the IV before AES-GCM encryption be dangerous?
-11. What other kind of algorithms could be used for AES-GCM? Explain how they improve security.
-12. Whould the Forbidden Attack be possible if AES-GCM was generating nonces from the record sequence number?
-13. How secure is AES-GCM?
-14. Is it insecure if a server is forced to resend a new packet in a new session with the same salt or different salt?
+14. **Describe the Forbidden Attack and why it is called that way? **
+<br> The attack is called forbidden because it will never happen if there will be no mistakes in the implementation. In our case, the goal of the attack is to derive the key used for GHASH. </br>
+
+15. **Which functions are used in AES-GCM?** 
+
+16.**How is the GHASh Key L computed?**
+
+17. **How can an attacker get Key L when a nonce is reused?**
+
+18. **Which algorithm is used for Factorization and in which complexity does it operate?**
+<br> We use Cantor-Zassenhaus algorithm and it has a polynomial complexity. </br>
+
+19. **Why is a static endpoint needed to mount a practical forgery attack? What is a static endpoint?**
+
+20. **Explain the steps of a practical forgery attack with nocne reuse and why a man in the middle is needed.**
+
+21. **Under which circumstances is the Forbidden Attack possible?**
+<br> When we reuse nonces, wrong implementation. </br>
+
+22. **How long is the IV in AES-GCM for TLS and what does it consist of?**
+<br> The IV is 96 bits (32 bits of salt and 64 bits of nonce).
+
+23. **Why is salt added to the nonce to create the IV in AES-GCM?**
+<br> When we have two clients, we can have some collisions due to the similar key or similar nonces. To avoid this, salt is used. </br>
+
+24. **What is added to the IV before AES-GCM encryption and why?**
+<br> Before AES-GCM encryption, 31 zeros after the IV and 1 one is added. These 32 bits are used as a counter. </br>
+
+25. **Why could adding 0^32 to the IV before AES-GCM encryption be dangerous?**
+<br> Because it could be a situation when the Ek would be all zeros. Supposing this, the attacker can easily retrieve the GHASH value. </br>  
+26. **What other kind of algorithms could be used for AES-GCM? Explain how they improve security.**
+
+27. **Would the Forbidden Attack be possible if AES-GCM was generating nonces from the record sequence number?**
+
+28. **How secure is AES-GCM?**
+<br> It is very secure if there are no developer mistakes and, of course, no nonce reused. </br>
+
+29. **Is it insecure if a server is forced to resend a new packet in a new session with the same salt or different salt?**
+<br> </br>
 15. What benefits arise form using the TLS record sequence number as nonce? 
 17. What is the goal of the Forbidden Attack? 
 18. What is the goal of the known plain message attack?
