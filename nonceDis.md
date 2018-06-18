@@ -49,9 +49,9 @@ AES-GCM provides authenticated encryption with associated data (AEAD). It uses:
 15. **Which functions are used in AES-GCM?** 
 <br> AES, XOR and GHASH.</br>
 16. **How is the GHASh Key L computed?**
-<br> </br>
+<br> L = Enc(0) (using AES encryption of 128-bit of zeros).</br>
 17. **How can an attacker get Key L when a nonce is reused?**
-<br> </br>
+<br> XOR the Tags and factor the polynomial, L is one of the roots. We have to factor other polynomials to get L.</br>
 18. **Which algorithm is used for Factorization and in which complexity does it operate?**
 <br> We use Cantor-Zassenhaus algorithm and it has a polynomial complexity. </br>
 
