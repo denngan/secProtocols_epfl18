@@ -1,8 +1,20 @@
-1. What is AES?
-2. What is TLS?
-3. What is AES-GCM?
-3. In which version of TLS is AES-GCM used. 
-4. What is AEAD?
+1. **What is AES?**
+AES (Andvanced encryption algorithm) is a specification for the encryption of electronic data.
+
+2. **What is TLS?**
+TLS (Transport Layer Security Protocol) is a cryptographic protocol that provides communications security over a computer network (typically, the HTTP protocol). It sets up the cryptographic algorithms, validates both parties through digital certificates and generates symmetric key.
+
+3. **What is AES-GCM?**
+AES-GCM provides authenticated encryption with associated data (AEAD). It uses:
+-- Galois Counter Mode (GCM);
+-- an authenticated mode of operation;
+-- Advanced Encryption Standart (AES).
+
+3. **In which version of TLS is AES-GCM used?**
+Version 1.3.
+
+4. **What is AEAD?**
+AEAD - 
 5. What is a nonce? Where is it used in AES-GCM?
 6. What is a Galois Field?
 5. What is the best way to generate a nonce?
