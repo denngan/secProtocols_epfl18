@@ -57,14 +57,13 @@ AES-GCM provides authenticated encryption with associated data (AEAD). It uses:
 
 19. **Why is a static endpoint needed to mount a practical forgery attack? What is a static endpoint?**
 <br> Static endpoint is a site which uses only static html. With a static endpoint, we know, which message is going to be sent and we can mount a known plaintext attack. Without known plaintext attack we can not change C, that is why for the forgery attack we need a static endpoint. </br>
-20. **Explain the steps of a practical forgery attack with nonce reuse and why a man in the middle is needed.**
-<br> Firstly, we mount man-in-the-middle between the server and the user. The steps are:
+20. **Explain the steps of a practical forgery attack with nonce reuse and why a man in the middle is needed.**   
+Firstly, we mount man-in-the-middle between the server and the user. The steps are:
 * Collect nonces, wait for duplicate;
 * Get GHASH key (enable forgery)
 * Redirect to static web site;
 * Known plaintext attack - enable encryption;
 * Inject Javascript.
-</br>
 21. **Under which circumstances is the Forbidden Attack possible?**
 <br> When we reuse nonces, wrong implementation. </br>
 
