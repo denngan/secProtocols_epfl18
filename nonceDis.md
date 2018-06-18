@@ -1,8 +1,8 @@
-1. **What is AES?**
-<br> AES (Andvanced encryption algorithm) is a specification for the encryption of electronic data. </br>
+1. **What is AES?**  
+AES (Andvanced encryption algorithm) is a blockcipher encrypting 128 bits with a symmetric key.
 
 2. **What is TLS?**
-<br> TLS (Transport Layer Security Protocol) is a cryptographic protocol that provides communications security over a computer network (typically, the HTTP protocol). It sets up the cryptographic algorithms, validates both parties through digital certificates and generates symmetric key. </br>
+TLS (Transport Layer Security Protocol) is a cryptographic protocol that provides communication security over a computer network (typically, the HTTP protocol). It sets up the cryptographic algorithms, validates both parties through digital certificates and generates symmetric key.
 
 3. **What is AES-GCM?**
 AES-GCM provides authenticated encryption with associated data (AEAD). It uses:
