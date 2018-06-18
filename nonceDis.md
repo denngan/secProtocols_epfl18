@@ -4,6 +4,7 @@
 3. In which version of TLS is AES-GCM used. 
 4. What is AEAD?
 5. What is a nonce? Where is it used in AES-GCM?
+6. What is a Galois Field?
 5. What is the best way to generate a nonce?
 6. What is the difference between using a counter and LSFR for nonce generation?
 8. Why should nonces not be created randomly?
