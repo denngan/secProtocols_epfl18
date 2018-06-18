@@ -56,8 +56,8 @@ AES-GCM provides authenticated encryption with associated data (AEAD). It uses:
 <br> We use Cantor-Zassenhaus algorithm and it has a polynomial complexity. </br>
 
 19. **Why is a static endpoint needed to mount a practical forgery attack? What is a static endpoint?**
-<br> </br>
-20. **Explain the steps of a practical forgery attack with nocne reuse and why a man in the middle is needed.**
+<br> Static endpoint is a site which uses only static html. With a static endpoint, we know, which message is going to be sent and we can mount a known plaintext attack. Without known plaintext attack we can not change C, that is why for the forgery attack we need a static endpoint. </br>
+20. **Explain the steps of a practical forgery attack with nonce reuse and why a man in the middle is needed.**
 <br> </br>
 21. **Under which circumstances is the Forbidden Attack possible?**
 <br> When we reuse nonces, wrong implementation. </br>
@@ -73,8 +73,9 @@ AES-GCM provides authenticated encryption with associated data (AEAD). It uses:
 
 25. **Why could adding 0^32 to the IV before AES-GCM encryption be dangerous?**
 <br> Because it could be a situation when the Ek would be all zeros. Supposing this, the attacker can easily retrieve the GHASH value. </br>  
+
 26. **What other kind of algorithms could be used for AES-GCM? Explain how they improve security.**
-<br> </br>
+<br>ChaCha20-Poly1305, AES-OCB for deterministic nonce creation. The advantages here are that the nonce is constructed from the record sequence number and it is not needed to send it to transmit the nonce with each message. </br>
 27. **Would the Forbidden Attack be possible if AES-GCM was generating nonces from the record sequence number?**
 <br> </br>
 28. **How secure is AES-GCM?**
