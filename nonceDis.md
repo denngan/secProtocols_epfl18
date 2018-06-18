@@ -6,9 +6,9 @@
 
 3. **What is AES-GCM?**
 AES-GCM provides authenticated encryption with associated data (AEAD). It uses:
-<br> - Galois Counter Mode (GCM); </br>
-<br> - an authenticated mode of operation; </br>
-<br> - Advanced Encryption Standart (AES). </br>
+<br> * Galois Counter Mode (GCM); </br>
+<br> * an authenticated mode of operation; </br>
+<br> * Advanced Encryption Standart (AES). </br>
 
 4. **In which version of TLS is AES-GCM used?**
 <br> Version 1.3. </br>
