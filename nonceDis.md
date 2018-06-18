@@ -47,7 +47,7 @@ AES-GCM provides authenticated encryption with associated data (AEAD). It uses:
 <br> The attack is called forbidden because it will never happen if there will be no mistakes in the implementation. In our case, the goal of the attack is to derive the key used for GHASH. </br>
 
 15. **Which functions are used in AES-GCM?** 
-<br> </br>
+<br> AES, XOR and GHASH.</br>
 16. **How is the GHASh Key L computed?**
 <br> </br>
 17. **How can an attacker get Key L when a nonce is reused?**
