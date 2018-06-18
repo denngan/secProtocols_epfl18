@@ -10,15 +10,27 @@ AES-GCM provides authenticated encryption with associated data (AEAD). It uses:
 -- an authenticated mode of operation;
 -- Advanced Encryption Standart (AES).
 
-3. **In which version of TLS is AES-GCM used?**
+4. **In which version of TLS is AES-GCM used?**
 Version 1.3.
 
-4. **What is AEAD?**
-AEAD - 
-5. What is a nonce? Where is it used in AES-GCM?
-6. What is a Galois Field?
-5. What is the best way to generate a nonce?
-6. What is the difference between using a counter and LSFR for nonce generation?
+5. **What is AEAD?**
+AEAD - authenticated encryption with associated data.
+
+
+6. **What is a nonce? Where is it used in AES-GCM?**
+Nonce is an arbitrary number that can be used just once. In AES-GCM it is used in the formation of IV (initialization vector). IV = salt32 || nonce64.
+
+7. **What is a Galois Field?**
+Galois Field is a field that contains a finite number of elements.
+
+8. **What is the best way to generate a nonce?**
+There are two posiibilities: using a counter or using a Linear Feedback Shift Register (LFSR: a shift register whose input bit is a linear function of its previous state).
+
+
+9. **What is the difference between using a counter and LSFR for nonce generation?**
+
+
+
 8. Why should nonces not be created randomly?
 9. What does the Birthday Paradox imply.
 10. What is known plaintext attack? How does it work in AES-GCM?
