@@ -31,3 +31,4 @@
 17. What is the goal of the Forbidden Attack? 
 18. What is the goal of the known plain message attack?
 19. What are advantages and disadvantages of MAC-then Encrypt?
+20. Is the attack possible in real life? 
