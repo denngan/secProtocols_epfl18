@@ -16,7 +16,7 @@
 6. How can an attacker get Key L when a nonce is reused?
 8. Which algorithm is used for Factorization and in which complexity does it operate?
 8. Why is a static endpoint needed to mount a practical forgery attack? What is a static endpoint?
-9. Explain the steps of a practical forgery attack with nocne reuse.
+9. Explain the steps of a practical forgery attack with nocne reuse and why a man in the middle is needed.
 4. Under which circumstances is the Forbidden Attack possible?
 7. How long is the IV in AES-GCM for TLS and what does it consist of?
 8. Why is salt added to the nonce to create the IV in AES-GCM?
@@ -27,3 +27,5 @@
 13. How secure is AES-GCM?
 14. Is it insecure if a server is forced to resend a new packet in a new session with the same salt or different salt?
 15. What benefits arise form using the TLS record sequence number as nonce? 
+17. What is the goal of the Forbidden Attack? 
+18. What is the goal of the known plain message attack?
