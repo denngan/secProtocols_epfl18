@@ -49,18 +49,18 @@ AES-GCM provides authenticated encryption with associated data (AEAD). It uses:
 <br> The attack is called forbidden because it will never happen if there will be no mistakes in the implementation. In our case, the goal of the attack is to derive the key used for GHASH. </br>
 
 15. **Which functions are used in AES-GCM?** 
-
-16.**How is the GHASh Key L computed?**
-
+<br> </br>
+16. **How is the GHASh Key L computed?**
+<br> </br>
 17. **How can an attacker get Key L when a nonce is reused?**
-
+<br> </br>
 18. **Which algorithm is used for Factorization and in which complexity does it operate?**
 <br> We use Cantor-Zassenhaus algorithm and it has a polynomial complexity. </br>
 
 19. **Why is a static endpoint needed to mount a practical forgery attack? What is a static endpoint?**
-
+<br> </br>
 20. **Explain the steps of a practical forgery attack with nocne reuse and why a man in the middle is needed.**
-
+<br> </br>
 21. **Under which circumstances is the Forbidden Attack possible?**
 <br> When we reuse nonces, wrong implementation. </br>
 
@@ -76,16 +76,21 @@ AES-GCM provides authenticated encryption with associated data (AEAD). It uses:
 25. **Why could adding 0^32 to the IV before AES-GCM encryption be dangerous?**
 <br> Because it could be a situation when the Ek would be all zeros. Supposing this, the attacker can easily retrieve the GHASH value. </br>  
 26. **What other kind of algorithms could be used for AES-GCM? Explain how they improve security.**
-
+<br> </br>
 27. **Would the Forbidden Attack be possible if AES-GCM was generating nonces from the record sequence number?**
-
+<br> </br>
 28. **How secure is AES-GCM?**
 <br> It is very secure if there are no developer mistakes and, of course, no nonce reused. </br>
 
 29. **Is it insecure if a server is forced to resend a new packet in a new session with the same salt or different salt?**
 <br> </br>
-15. What benefits arise form using the TLS record sequence number as nonce? 
-17. What is the goal of the Forbidden Attack? 
-18. What is the goal of the known plain message attack?
-19. What are advantages and disadvantages of MAC-then Encrypt?
-20. Is the attack possible in real life? 
+30. **What benefits arise form using the TLS record sequence number as nonce?**
+<br> </br>
+31. **What is the goal of the Forbidden Attack?** 
+<br> </br>
+32. **What is the goal of the known plain message attack?**
+<br> </br>
+33. **What are advantages and disadvantages of MAC-then Encrypt?**
+<br> </br>
+34. **Is the attack possible in real life?** 
+<br> </br>
