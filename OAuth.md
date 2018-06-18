@@ -1,6 +1,7 @@
 ### Possible questions
 
-1. What is OAuth?
+1. **What is OAuth?**  
+authorization framework, allowing third party applications (Relying Party) to access user resources at a web server (Service Provider) without having account credentials. 
 2. What are the differences between OAuth 1.0, 1.0a, and 2.0?
 3. What are the differences between the implicit flow and the authorization flow in OAuth 2.0?
 4. Define authorization and authentication. 
