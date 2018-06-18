@@ -30,3 +30,4 @@
 15. What benefits arise form using the TLS record sequence number as nonce? 
 17. What is the goal of the Forbidden Attack? 
 18. What is the goal of the known plain message attack?
+19. What are advantages and disadvantages of MAC-then Encrypt?
