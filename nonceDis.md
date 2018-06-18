@@ -26,10 +26,8 @@ AES-GCM provides authenticated encryption with associated data (AEAD). It uses:
 8. **What is the best way to generate a nonce?**
 <br> There are two posiibilities: using a counter or using a Linear Feedback Shift Register (LFSR: a shift register whose input bit is a linear function of its previous state). </br>
 
-
 9. **What is the difference between using a counter and LSFR for nonce generation?**
-
-
+<br> </br>
 
 10. **Why should nonces not be created randomly?**
 <br> When we create nonces randomly, we could have some collisions. For instance, with 2^33 sent messages the probability of collision is over 86% due to Birthday Paradox. </br>
