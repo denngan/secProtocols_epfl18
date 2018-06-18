@@ -87,8 +87,8 @@ AES-GCM provides authenticated encryption with associated data (AEAD). It uses:
 31. **What is the goal of the Forbidden Attack?** 
 <br> </br>
 32. **What is the goal of the known plain message attack?**
-<br> </br>
+<br> To retrieve the key using the known plaintext. </br>
 33. **What are advantages and disadvantages of MAC-then Encrypt?**
-<br> </br>
+<br> The advantages are that the authentification tag is created from the message and then uses as a nonce which means that nonce reuse is not a problem. But the message must be processed twice while AES-GCM (so, the speed is a disadvantage).</br>
 34. **Is the attack possible in real life?** 
-<br> </br>
+<br> Yes, of course! According to the findings, 184 servers that reuse nonces were found (70 devices returned one duplicate and 107 used the same number constantly). 70'000 devices generated random nonces. </br>
