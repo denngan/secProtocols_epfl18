@@ -26,4 +26,4 @@
 12. Whould the Forbidden Attack be possible if AES-GCM was generating nonces from the record sequence number?
 13. How secure is AES-GCM?
 14. Is it unsecure if a server is forced to resend a new packet in a new session with the same salt?
-15.
+15. What benefits arise form using the TLS record sequence number as nonce? 
